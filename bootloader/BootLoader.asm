@@ -17,3 +17,5 @@ jmp $		; run infinite-loop
 times 510 - ( $ - $$)	db 0x00	; $: current address
 				; $$: start address of currect section(.text section)
 				; $-$$: offset related by current section
+
+dw 0xAA55	; bootloader magic number
