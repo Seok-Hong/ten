@@ -12,6 +12,13 @@
 
 SECTION .text	; define .text section
 
+mov ax, 0xB800	; AX <- 0xB800
+mov ds, ax	; DS <- AX(0xB800)
+
+mov byte [0x00], 'M'	; DS:offset; 0xB800:0x000 <- 'M'
+mov byte [0x01], 0x4A	; DS:offset; 0xB000:0x001 <- 0x4A 
+			; 0x4A; (background:red, foreground:light green)
+
 jmp $		; run infinite-loop
 
 times 510 - ( $ - $$)	db 0x00	; $: current address
