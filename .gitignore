@@ -3,6 +3,8 @@
 bootloader/*.bin
 
 # additional trash
+*.swo
+*.swp
 .tags*
 *.sublime-project
 *.sublime-workspace
