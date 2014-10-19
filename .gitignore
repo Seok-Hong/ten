@@ -8,3 +8,11 @@ bootloader/*.bin
 .tags*
 *.sublime-project
 *.sublime-workspace
+
+# ignore extension
+*.a
+!lib.a
+
+# etc
+/TODO
+/build
