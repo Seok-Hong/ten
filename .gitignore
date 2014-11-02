@@ -1,5 +1,7 @@
 # .gitignore for global
 
+*.img
+
 *.swo
 *.swp
 .tags*
