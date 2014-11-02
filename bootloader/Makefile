@@ -8,10 +8,10 @@
 #	0.0.1 - first version
 #------------------------------------------------------------------------------
 
-all: BootLoader.bin
+all: bootloader.bin
 
-BootLoader.bin: BootLoader.asm
-	nasm -o BootLoader.bin BootLoader.asm
+bootloader.bin: bootloader.asm
+	nasm -o bootloader.bin bootloader.asm
 
 clean:
-	rm -f BootLoader.bin
+	rm -f bootloader.bin

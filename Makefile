@@ -19,8 +19,8 @@ BootLoader:
 Kernel32:
 	make -C kernel32
 
-Disk.img: bootloader/BootLoader.bin kernel32/Kernel32.bin
-	utility/imagemaker/imagemaker.exe $^
+Disk.img: bootloader/bootloader.bin kernel32/kernel32.bin
+	utility/imagemaker/imagemaker $^
 	cat $^ > Disk.img
 
 clean:

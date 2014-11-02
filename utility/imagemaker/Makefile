@@ -1,7 +1,7 @@
-all: imagemaker.exe
+all: imagemaker
 
-imagemaker.exe: imagemaker.c
+imagemaker: imagemaker.c
 	gcc -o $@ $<
 
 clean:
-	rm -f imagemaker.exe
+	rm -f imagemaker

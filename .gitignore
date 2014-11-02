@@ -1,20 +1,7 @@
-# build trash
-*.img
-**/*.bin
-**/*.exe
-tmp/
+# .gitignore for global
 
-# additional trash
 *.swo
 *.swp
 .tags*
 *.sublime-project
 *.sublime-workspace
-
-# ignore extension
-*.a
-!lib.a
-
-# etc
-/TODO
-/build
