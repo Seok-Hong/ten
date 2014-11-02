@@ -21,12 +21,23 @@ BootLoader:
 	@echo ========== Build Complete ==========
 	@echo
 
-Disk.img: bootloader/BootLoader.bin
+Kernel32:
+	@echo
+	@echo ========== Build Boot Loader ==========
+	@echo
+
+	make -C kernel32
+
+	@echo
+	@echo ========== Build Complete ==========
+	@echo
+
+Disk.img: BootLoader Kernel32
 	@echo
 	@echo ========== Build Image Build Start ==========
 	@echo
 
-	cp bootloader/BootLoader.bin Disk.img
+	cat bootloader/BootLoader.bin kernel32/VirtualOS.bin > Disk.img
 
 	@echo
 	@echo ========== All Build Complete ==========
