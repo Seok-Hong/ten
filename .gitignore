@@ -1,6 +1,8 @@
 # build trash
 *.img
-*/*.bin
+**/*.bin
+**/*.exe
+tmp/
 
 # additional trash
 *.swo

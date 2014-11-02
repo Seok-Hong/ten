@@ -17,7 +17,7 @@ jmp 0x07c0:START	; far-jump to START label with store the 0x07C0 into CS
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;	TEN OS Environment Settings
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-TOTALSECTORCOUNT:	dw	1024	; TEN OS image size without bootloader(512byte)
+TOTALSECTORCOUNT:	dw	0x02	; TEN OS image size without bootloader(512byte)
 								; TEN OS image can be maximum 1152 sectors(0x90000byte)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
